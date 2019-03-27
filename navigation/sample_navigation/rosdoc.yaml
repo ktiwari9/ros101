@@ -1,0 +1,7 @@
+- builder: doxygen
+  project_brief: 'Sample Navigation package'
+  file_patterns: '*.c *.cpp *.h *.hpp *.cc *.dox *py *.md'
+  filter_patterns: '*.py=py_filter.sh' 
+  extract_all: 'YES'
+  disable_index: 'NO'
+  

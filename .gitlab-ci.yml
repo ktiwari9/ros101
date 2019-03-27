@@ -1,0 +1,27 @@
+image: ros:kinetic-ros-base
+
+pages:
+  stage: deploy
+  script:
+  - pwd
+  - apt-get --quiet update --yes
+  - apt-get --quiet install --yes lsb-release doxygen
+  - lsb_release -a
+  - uname -a
+  - ls -R
+  - apt-get --quiet install --yes ros-kinetic-rosdoc-lite
+  - apt-get --quiet install --yes python-pip
+  - pip install doxypypy
+  - mkdir .public
+  - mkdir public
+  - ./rosdoc_script.sh
+  - doxygen .doxygen/Doxyfile
+  - mv .doxygen/documentation/html/* .public/
+  - mv .public/* public/
+  - cp docs/public/ga.js public/
+  - ls public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

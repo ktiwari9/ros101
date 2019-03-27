@@ -1,0 +1,9 @@
+*~
+*.md~
+
+# Catkin Workspace related files
+CMakeCache.txt
+catkin_ws_tutorial/src/CMakeLists.txt
+catkin_ws_tutorial/.catkin_workspace
+catkin_ws_tutorial/devel/
+catkin_ws_tutorial/build/

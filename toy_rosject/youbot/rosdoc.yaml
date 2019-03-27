@@ -1,0 +1,6 @@
+- builder: doxygen
+  project_brief: 'Toy ROSject'
+  file_patterns: '*.c *.cpp *.h *.hpp *.cc *.dox *py *.md'
+  filter_patterns: '*.py=py_filter.sh' 
+  extract_all: 'YES'
+  disable_index: 'NO'

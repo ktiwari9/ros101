@@ -1,0 +1,6 @@
+<launch>
+  <node name="node_name_1" pkg="youbot" type="decision_making.py" />
+  <node name="node_name_2" pkg="youbot" type="slam.py" />
+  <node name="node_name_3" pkg="youbot" type="lidar_preprocessing.py" />
+  <node name="node_name_4" pkg="youbot" type="wheel_control.py" />
+</launch>
